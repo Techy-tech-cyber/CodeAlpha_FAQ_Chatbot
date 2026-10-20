@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--ink:#1d2924;--green:#277454;--green-dark:#1e5b41;--mint:#eaf5ee;--line:#e5ece7;--muted:#829088}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 0%,#eaf5ed 0,transparent 43%),#fbfcfa;color:var(--ink);font-family:"DM Sans",sans-serif}
+button,input{font:inherit}
+button{cursor:pointer}
+.page{width:min(760px,calc(100% - 28px));margin:0 auto}
+.header{height:78px;display:flex;align-items:center;gap:11px;border-bottom:1px solid #e8eee9}
+.logo-mark{width:39px;height:39px;border-radius:12px;background:var(--green);display:grid;place-items:center;color:white;font:800 21px "Manrope",sans-serif;box-shadow:0 5px 12px #27745425}
+.brand{font:800 21px "Manrope",sans-serif;letter-spacing:-.7px}.brand span{color:#56a77a}
+.brand-caption{font-size:8px;letter-spacing:1.7px;color:#89958d;margin-top:1px}
+.online{margin-left:auto;font-size:11px;color:#64756a;display:flex;align-items:center;gap:7px}
+.online i,.bot-info i{width:7px;height:7px;background:#4db27b;border-radius:50%;display:inline-block}
+.intro{text-align:center;padding:42px 0 26px}
+.eyebrow{font-size:9px;font-weight:700;letter-spacing:2px;color:var(--green)}
+h1{font:800 clamp(35px,6vw,49px)/1.12 "Manrope",sans-serif;letter-spacing:-2px;margin:13px 0}
+h1 span{color:var(--green)}
+.intro p{font-size:13px;color:#7c8981;line-height:1.7;margin:0}
+.chat-card{border:1px solid var(--line);background:white;border-radius:18px;overflow:hidden;box-shadow:0 16px 55px #1e55300e}
+.chat-header{height:74px;display:flex;align-items:center;gap:11px;padding:0 19px;border-bottom:1px solid var(--line)}
+.bot-avatar,.tiny-avatar{display:grid;place-items:center;background:var(--green);color:white;font-weight:800;font-family:"Manrope",sans-serif}
+.bot-avatar{width:39px;height:39px;border-radius:13px}
+.bot-info{display:flex;flex-direction:column;gap:5px}.bot-info strong{font-size:12px}.bot-info span{font-size:10px;color:#829088;display:flex;align-items:center;gap:5px}
+.clear-chat{margin-left:auto;border:1px solid var(--line);border-radius:9px;background:#fff;color:#728177;font-size:19px;width:34px;height:34px}
+.messages{height:290px;overflow:auto;padding:20px 18px;display:flex;flex-direction:column;gap:15px;background:linear-gradient(#fff,#fdfefd)}
+.message-row{display:flex;gap:8px;align-items:flex-end;max-width:91%}
+.user-row{align-self:flex-end;flex-direction:row-reverse}
+.tiny-avatar{width:25px;height:25px;flex:0 0 25px;border-radius:8px;font-size:10px}
+.bubble{padding:12px 14px;border-radius:13px;font-size:12px;line-height:1.65;overflow-wrap:anywhere;white-space:pre-wrap}
+.bot-bubble{background:#f0f5f1;border-bottom-left-radius:4px;color:#304339}
+.user-bubble{background:var(--green);color:white;border-bottom-right-radius:4px}
+.match-label{font-size:9px;color:#7b8b80;margin-top:7px}
+.suggestions-label{font-size:8px;letter-spacing:1.5px;color:#98a39b;font-weight:700;padding:0 18px 10px}
+.suggestions{display:flex;gap:7px;flex-wrap:wrap;padding:0 18px 17px}
+.suggestion{border:1px solid #dce9df;background:#fff;border-radius:20px;padding:8px 11px;color:#47715a;font-size:10px;transition:.15s}
+.suggestion:hover{background:var(--mint)}
+.composer{margin:0 16px;padding:7px 7px 7px 14px;border:1px solid #dfe8e1;border-radius:12px;display:flex;gap:8px;align-items:center}
+.composer:focus-within{border-color:#77a88b;box-shadow:0 0 0 3px #2774540c}
+.composer input{flex:1;min-width:0;border:0;outline:0;background:transparent;font-size:12px;color:var(--ink);padding:8px 0}
+.composer input::placeholder{color:#a1aba4}
+.composer button{border:0;background:var(--green);color:#fff;width:37px;height:37px;border-radius:10px;font-size:17px}
+.composer button:hover{background:var(--green-dark)}
+.composer button:disabled{opacity:.55;cursor:wait}
+.status{text-align:center;font-size:9px;color:#a0aaa3;padding:12px 8px 15px}
+footer{text-align:center;padding:24px 0 30px;color:#9aa59d;font-size:8px;letter-spacing:1.8px}
+footer span{color:var(--green);padding:0 5px}
+@media(max-width:520px){.intro{padding-top:34px}.messages{height:330px;padding:15px 11px}.chat-header{padding:0 13px}.suggestions{padding-left:12px;padding-right:12px}.suggestions-label{padding-left:12px}.message-row{max-width:96%}.bubble{font-size:11px}}

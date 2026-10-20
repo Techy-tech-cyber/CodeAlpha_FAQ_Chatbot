@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Askly — FAQ Chatbot</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div class="logo-mark">A</div>
+      <div>
+        <div class="brand">askly<span>.</span></div>
+        <div class="brand-caption">FAQ ASSISTANT</div>
+      </div>
+      <div class="online"><i></i> Online</div>
+    </header>
+
+    <section class="intro">
+      <div class="eyebrow">YOUR QUICK ANSWER DESK</div>
+      <h1>Questions?<br><span>We have answers.</span></h1>
+      <p>Ask a question and our FAQ assistant will find the closest answer.</p>
+    </section>
+
+    <section class="chat-card">
+      <div class="chat-header">
+        <div class="bot-avatar">A</div>
+        <div class="bot-info">
+          <strong>Askly Assistant</strong>
+          <span><i></i> Usually replies instantly</span>
+        </div>
+        <button id="clear-chat" class="clear-chat" type="button" title="Clear chat">↻</button>
+      </div>
+
+      <div id="messages" class="messages" aria-live="polite">
+        <div class="message-row bot-row">
+          <div class="tiny-avatar">A</div>
+          <div class="bubble bot-bubble">Hi there! 👋 I'm your FAQ assistant. What would you like to know?</div>
+        </div>
+      </div>
+
+      <div class="suggestions-label">SUGGESTED QUESTIONS</div>
+      <div class="suggestions">
+        <button type="button" class="suggestion">How do I create an account?</button>
+        <button type="button" class="suggestion">How can I contact support?</button>
+        <button type="button" class="suggestion">How does this chatbot work?</button>
+      </div>
+
+      <form id="chat-form" class="composer">
+        <input id="message-input" type="text" maxlength="1000" placeholder="Type your question here..." autocomplete="off" aria-label="Your question">
+        <button id="send-button" type="submit" aria-label="Send message">➤</button>
+      </form>
+      <div id="status" class="status">Powered by TF-IDF and cosine similarity</div>
+    </section>
+    <footer>ASKLY <span>·</span> A SIMPLE FAQ CHATBOT PROJECT</footer>
+  </main>
+  <script src="/script.js"></script>
+</body>
+</html>
